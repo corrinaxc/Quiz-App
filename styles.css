@@ -5,6 +5,8 @@
 body {
     background-color: #FBE4FF;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 h1{
@@ -17,5 +19,10 @@ h1{
     margin-left: 0px;
     height: 50px;
     text-align: center;
+    color: #FF9Cee;
     /*enter styling here*/
+}
+
+.question-card {
+    width: 600px; /*check this*/
 }
