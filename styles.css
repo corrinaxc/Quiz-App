@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FBE4FF;
+    margin: 0;
+}
+
+h1{
+    margin: 0;
+}
+
+#App-title {
+    background-color: #ffffd1;
+    margin-top: 0px;
+    margin-left: 0px;
+    height: 50px;
+    text-align: center;
+    /*enter styling here*/
+}
