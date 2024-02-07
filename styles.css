@@ -40,16 +40,15 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.question {
-    align-self: center;
+    position: relative;
 }
 
 footer {
     height: 50px;
     width: 100vw;
     background-color: #ffffd1;
+    position:fixed;
+    bottom:0px;
 }
 
 #nav-bar{
@@ -61,6 +60,7 @@ footer {
 img {
     height: 45px;
     color:#aff8db;
+    /*background-color:#39ff14;*/
 }
 
 .nav-button{
@@ -69,10 +69,29 @@ img {
 
 button {
     height:30px;
-    border: black solid;
-    border-width: 0px;
-    border-radius: 2px ;
     background-color: #aff8db;
-    box-shadow: 10px 5px 5px rgb(57 255 20);
-    color:#FF9Cee
+    box-shadow: 10px 5px 5px #39ff14;
+    color:#FF9Cee;
+    border: none;
+}
+
+.bookmark {
+    flex-direction: flex-end;
+} 
+
+.tags {
+    display: flex;
+    align-items: flex-end;
+    gap:5px;
+    justify-content: flex-start;
+}
+
+.individual-tag {
+    width: 20px;
+    background-color: #39ff14;
+    font-size: 0.5em;
+    left: 0;
+    bottom: 0;
+    
+
 }
