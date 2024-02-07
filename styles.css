@@ -16,6 +16,13 @@ h1{
     margin: 0;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+}
+
 #App-title {
     background-color: #ffffd1;
     margin-top: 0px;
@@ -27,13 +34,6 @@ h1{
     color:#aff8db;
     text-shadow:2px 2px #FF9Cee;
     border-radius: 10px;
-}
-
-main{
-    display: flex;
-    flex-direction: column;
-    gap:20px;
-    align-items: center;
 }
 
 .question-card {
@@ -52,29 +52,6 @@ main{
     margin-left:30px;
     margin-right:30px;
 }
-footer {
-    height: 50px;
-    width: 100vw;
-    background-color: #ffffd1;
-    position:fixed;
-    bottom:0px;
-}
-
-#nav-bar{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-evenly;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top:0px
-}
-
-img {
-    height: 45px;
-    color:#aff8db;
-    /*background-color:#39ff14;*/
-}
 
 button {
     height:30px;
@@ -86,12 +63,12 @@ button {
     border-radius: 10px;
 }
 
-.bookmark {
+.fa-2xl {
     position: absolute;
-    top: 0;
-    right: 3px;
+    top: 12px;
+    right: 8px;
     height:30px;
-} 
+}
 
 ul {
     list-style-type: none;
@@ -116,9 +93,24 @@ li {
     padding:2px;
 }
 
-.fa-2xl {
-    position: absolute;
-    top: 12px;
-    right: 8px;
-    height:30px;
+footer {
+    height: 50px;
+    width: 100vw;
+    background-color: #ffffd1;
+    position:fixed;
+    bottom:0px;
 }
+
+#nav-bar{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top:0px
+}
+
+
+
+
