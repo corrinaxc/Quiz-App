@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #FBE4FF;
+    background-color: #eeb1d5;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     display: flex;
@@ -15,7 +15,8 @@ body {
 }
 
 h1{
-    margin: 0;
+    margin-top: 5px;
+
 }
 
 main{
@@ -26,23 +27,24 @@ main{
 }
 
 #App-title {
-    background-color: #ffffd1;
+    background-color: #c3dbff;
     margin-top: 0px;
     margin-left: 0px;
     width:100vw;
-    font-size:20px;
     height: 50px;
     text-align: center;
-    color:#aff8db;
+    color:#4a4e69;
     text-shadow:2px 2px #FF9Cee;
     border-radius: 10px;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 0;
 }
 
 .question-card {
     width: 80vw;
     height: 170px;
-    background-color:#ffffd1;
-    color: rgb(255, 156, 238);
+    background-color: #c3dbff;
+    color: #4a4e69;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,9 +59,9 @@ main{
 
 button {
     height:30px;
-    background-color: #aff8db;
+    background-color: #EFC7E5;
     box-shadow: 10px 5px 5px #FF9Cee;
-    color:#FF9Cee;
+    color:#4a4e69;
     border: none;
     margin-bottom:20px;
     border-radius: 10px;
@@ -88,9 +90,9 @@ ul {
 }
 
 li {
-    background-color: #aff8db;
+    background-color: #EFC7E5;
     margin:2px;
-    border: #FF9Cee solid;
+    border: #4a4e69 solid;
     border-radius: 3px;
     padding:2px;
 }
@@ -98,7 +100,7 @@ li {
 footer {
     height: 50px;
     width: 100vw;
-    background-color: #ffffd1;
+    background-color: #c3dbff;
     position:fixed;
     bottom:0px;
 }
@@ -114,7 +116,7 @@ footer {
 }
 
 #profile{
-    color:#FF9Cee;
+    color:#4a4e69;
     display:flex;
     gap: 20px;
     flex-wrap:wrap;
@@ -148,12 +150,12 @@ h2 {
     display: flex;
     gap:25px;
     margin-left: 20px;
-    color:#FF9Cee;
+    color:#4a4e69;
 }
 
 #dark-mode {
     margin-left: 20px;
-    color:#FF9Cee;
+    color:#4a4e69;
     display: flex;
     gap: 25px;
 }
