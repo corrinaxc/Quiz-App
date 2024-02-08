@@ -220,3 +220,13 @@ h2 {
   .slider.round:before {
     border-radius: 50%;
   }
+
+  @media screen and (min-width: 900px) {
+    .question-card {
+        width: 40vw;
+    }
+    ul {
+        font-size: 1em;
+        margin-top: 15px;
+    }
+}
