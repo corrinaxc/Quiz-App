@@ -20,6 +20,7 @@
       src="https://kit.fontawesome.com/5f5d4bb5bf.js"
       crossorigin="anonymous"
     ></script>
+    <script src="form.js" defer></script>
     <title>Quiz App</title>
   </head>
   <body>
@@ -27,14 +28,14 @@
       <h1>Quiz App</h1>
     </section>
     <main>
-      <form id="generate-question-form">
+      <form id="generate-question-form" data-js="generate-question-form">
         <label for="your-question">Your Question:</label>
         <textarea name="your-question" id="your-question"></textarea>
         <label for="your-answer">Your Answer:</label>
         <textarea name="your-answer" id="your-answer"></textarea>
         <label for="your-tags">Tags:</label>
         <input name="your-tags" id="your-tags" />
-        <button type="submit">Submit</button>
+        <button type="submit" data-js="submit-form-button">Submit</button>
       </form>
     </main>
   </body>
