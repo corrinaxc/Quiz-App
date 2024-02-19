@@ -57,6 +57,11 @@ main{
     margin-right:30px;
 }
 
+.answer{
+    font-size: 50px;
+    font-weight: 700;
+}
+
 button {
     height:30px;
     background-color: #EFC7E5;
