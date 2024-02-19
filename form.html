@@ -23,18 +23,34 @@
     <script src="form.js" defer></script>
     <title>Quiz App</title>
   </head>
-  <body>
+  <body data-js="body">
     <section id="App-title">
       <h1>Quiz App</h1>
     </section>
     <main>
       <form id="generate-question-form" data-js="generate-question-form">
         <label for="your-question">Your Question:</label>
-        <textarea name="your-question" id="your-question"></textarea>
+        <textarea
+          name="your-question"
+          id="your-question"
+          maxlength="150"
+          data-js="your-question"
+        ></textarea>
+        <p class="character-count" data-js="character-count-question">
+          150 Characters Remaining
+        </p>
         <label for="your-answer">Your Answer:</label>
-        <textarea name="your-answer" id="your-answer"></textarea>
-        <label for="your-tags">Tags:</label>
-        <input name="your-tags" id="your-tags" />
+        <textarea
+          name="your-answer"
+          id="your-answer"
+          maxlength="150"
+          data-js="your-answer"
+        ></textarea>
+        <p class="character-count" data-js="character-count-answer">
+          150 Characters Remaining
+        </p>
+        <label for="yourtags">Tags:</label>
+        <input name="yourtags" id="your-tags" />
         <button type="submit" data-js="submit-form-button">Submit</button>
       </form>
       <footer>
