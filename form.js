@@ -39,9 +39,9 @@ form.addEventListener("submit", (event) => {
 
     questionElement.textContent = question;
     answerElement.textContent = answer;
-    tag1Element.textContent = tag1;
-    tag2Element.textContent = tag2;
-    tag3Element.textContent = tag3;
+    tag1Element.textContent = `#${tag1}`;
+    tag2Element.textContent = `#${tag2}`;
+    tag3Element.textContent = `#${tag3}`;
 
     questionCard.classList.add("question-card");
     questionElement.classList.add("question");

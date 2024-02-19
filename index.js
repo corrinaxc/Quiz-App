@@ -12,10 +12,6 @@ function showAnswer() {
     answer.removeAttribute("hidden");
 }
 
-////function clearBookmark {
-
-//}
-
 hideAnswer();
 
 answerButton.addEventListener("click", () => {
@@ -34,6 +30,5 @@ bookmark.addEventListener("click", () => {
         bookmark.classList.add("fa-solid");
     } else {
     bookmark.classList.remove("fa-solid");
-    bookmark.classList.add("fa-regular");
     }
 })

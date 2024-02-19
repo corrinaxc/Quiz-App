@@ -58,9 +58,6 @@ main{
     margin-right:30px;
 }
 
-.answer{
-}
-
 button {
     height:30px;
     background-color: #EFC7E5;
@@ -71,11 +68,51 @@ button {
     border-radius: 10px;
 }
 
+button:hover {
+    /* Button default styles, customize them to match your button */
+    /*display: inline-block;
+    height:30px;
+    padding: 10px 20px;
+    color: #4a4e69;
+    background-color: #EFC7E5;
+    box-shadow: 10px 5px 5px #FF9Cee;
+    border: none;
+    border-radius: 10px;*/
+    cursor: pointer;
+    
+    /* Apply the pulse animation */
+    animation: pulse 1s infinite;
+  }
+  
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
 .fa-2xl {
     position: absolute;
     top: 12px;
     right: 8px;
     height:30px;
+    color: #eeb1d5;
+}
+
+.fa-2xl.active {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    height:30px;
+    color: #eeb1d5;
+    background-color: #eeb1d5;
+
 }
 
 ul {
@@ -138,7 +175,7 @@ footer {
 }
 
 h2 {
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 #counter {
@@ -152,9 +189,10 @@ h2 {
 
 #settings {
     display: flex;
-    gap:25px;
+    /*gap:25px;*/
     margin-left: 20px;
     color:#4a4e69;
+    align-self: center;
 }
 
 #dark-mode {
