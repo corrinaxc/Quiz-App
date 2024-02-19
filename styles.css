@@ -42,7 +42,7 @@ main{
 
 .question-card {
     width: 80vw;
-    height: 170px;
+    height: 200px;
     background-color: #c3dbff;
     color: #4a4e69;
     display: flex;
@@ -58,8 +58,6 @@ main{
 }
 
 .answer{
-    font-size: 50px;
-    font-weight: 700;
 }
 
 button {

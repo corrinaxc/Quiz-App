@@ -1,5 +1,6 @@
 const answer = document.querySelector('[data-js="answer"]');
 const answerButton = document.querySelector('[data-js="answer-button"]')
+const bookmark = document.querySelector('[data-js="bookmark"]')
 
 function hideAnswer() {
     answer.setAttribute("hidden", "");
@@ -9,6 +10,10 @@ function showAnswer() {
     answer.removeAttribute("hidden");
 }
 
+////function clearBookmark {
+
+//}
+
 hideAnswer();
 
 answerButton.addEventListener("click", () => {
@@ -17,5 +22,14 @@ answerButton.addEventListener("click", () => {
     }
     else {
     hideAnswer();
+    }
+})
+
+bookmark.addEventListener("click", () => {
+    if (bookmark.class = ("fa-regular")) {
+        bookmark.classList.add("fa-solid");
+    } else {
+    bookmark.classList.remove("fa-solid");
+    bookmark.classList.add("fa-regular");
     }
 })
