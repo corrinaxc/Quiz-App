@@ -20,14 +20,15 @@
       src="https://kit.fontawesome.com/5f5d4bb5bf.js"
       crossorigin="anonymous"
     ></script>
+    <script src="profile.js" defer></script>
     <title>Quiz App</title>
   </head>
-  <body>
-    <section id="App-title">
-      <h1>Quiz App</h1>
+  <body data-js="body">
+    <section id="App-title" data-js="app-title">
+      <h1 data-js="title">Quiz App</h1>
     </section>
 
-    <section id="profile">
+    <section id="profile" data-js="profile">
       <img
         src="./resources/slack.jpg"
         id="profile-photo"
@@ -57,29 +58,29 @@
       </section>
 
       <section id="dark-mode">
-        <p><b>Dark Mode</b></p>
+        <p data-js="dark-mode-title"><b>Dark Mode</b></p>
         <label class="switch">
-          <input type="checkbox" />
+          <input type="checkbox" data-js="dark-mode" />
           <span class="slider round"></span>
         </label>
       </section>
     </section>
 
-    <footer>
+    <footer data-js="nav-footer">
       <nav id="nav-bar">
-        <a class="nav-button" href="index.html"
+        <a class="nav-button" data-js="home-button" href="index.html"
           ><i class="fa-regular fa-house fa-3x" style="color: #eeb1d5"></i
         ></a>
-        <a class="nav-button" href="bookmarks.html"
+        <a class="nav-button" data-js="bookmark-button" href="bookmarks.html"
           ><i class="fa-regular fa-bookmark fa-3x" style="color: #eeb1d5"></i
         ></a>
-        <a class="nav-button" href="form.html"
+        <a class="nav-button" data-js="form-button" href="form.html"
           ><i
             class="fa-regular fa-circle-question fa-3x"
             style="color: #eeb1d5"
           ></i
         ></a>
-        <a class="nav-button" href="profile.html"
+        <a class="nav-button" data-js="profile-button" href="profile.html"
           ><i class="fa-solid fa-user fa-3x" style="color: #eeb1d5"></i
         ></a>
       </nav>
