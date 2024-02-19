@@ -1,10 +1,7 @@
 const answer = document.querySelector('[data-js="answer"]');
 const answerButton = document.querySelector('[data-js="answer-button"]');
 const bookmark = document.querySelector('[data-js="bookmark"]');
-const homeButton = document.querySelector('[data-js="home-button"]');
-const bookmarkButton = document.querySelector('[data-js="bookmark-button"]');
-const formButton = document.querySelector('[data-js="form-button"]');
-const profileButton = document.querySelector('[data-js="profile-button"]');
+
 
 
 function hideAnswer() {
@@ -24,9 +21,11 @@ hideAnswer();
 answerButton.addEventListener("click", () => {
     if (answer.hidden === true) {
     showAnswer();
+    answerButton.textContent = "Hide Answer";
     }
     else {
     hideAnswer();
+    answerButton.textContent = "Show Answer";
     }
 })
 
