@@ -1,5 +1,9 @@
 const form = document.querySelector('[data-js="generate-question-form"]');
 const body = document.querySelector('[data-js="body"]');
+const characterCountQuestion = document.querySelector('[data-js="character-count-question"]');
+const characterCountAnswer = document.querySelector('[data-js="character-count-answer"]');
+const question = document.querySelector('[data-js="your-question"]');
+const answer = document.querySelector('[data-js="your-answer"]');
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -49,6 +53,20 @@ form.addEventListener("submit", (event) => {
     tag2Element.classList.add("li");
     tag3Element.classList.add("li");
 });
+
+question.addEventListener("input", () => {
+    const length = question.value.length;
+    const charCount = (150-length);
+    characterCountQuestion.textContent = `${charCount} characters remaining`
+})
+
+answer.addEventListener("input", () => {
+    const length = answer.value.length;
+    const charCount = (150-length);
+    characterCountAnswer.textContent = `${charCount} characters remaining`
+
+
+})
 
 /*    <main>
       <section class="question-card" id="qc-1" data-js="question-card">
@@ -101,17 +119,5 @@ function countChar(val) {
     }
 
 
-question.addEventListener("input", () => {
-    const length = question.value.length;
-    const charCount = (150-length);
-    characterCountQuestion.textContent = `${charCount} characters remaining`
-})
-
-answer.addEventListener("input", () => {
-    const length = answer.value.length;
-    const charCount = (150-length);
-    characterCountAnswer.textContent = `${charCount} characters remaining`
-
-
-}) */
+ */
 
