@@ -39,6 +39,7 @@ form.addEventListener("submit", (event) => {
 
     questionElement.textContent = question;
     answerElement.textContent = answer;
+    answerButton.textContent = "Show Answer";
     tag1Element.textContent = `#${tag1}`;
     tag2Element.textContent = `#${tag2}`;
     tag3Element.textContent = `#${tag3}`;

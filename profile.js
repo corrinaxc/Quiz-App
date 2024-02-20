@@ -16,10 +16,10 @@ darkMode.addEventListener("input", (event) => {
         profile.style.color = "#eeb1d5";
         heading.style.backgroundColor = "#eeb1d5";
         footer.style.backgroundColor = "#eeb1d5";
-        homeButton.style.color = "#4a4e69";
-        bookmarkButton.style.color = "#4a4e69";
-        formButton.style.color = "#4a4e69";
-        profileButton.style.color = "#4a4e69";
+        homeButton.classList.add("profile-dark-mode");
+        bookmarkButton.classList.add("profile-dark-mode");
+        formButton.classList.add("profile-dark-mode");
+        profileButton.classList.add("profile-dark-mode");
         darkModeTitle.style.color = "#eeb1d5";
     } else {
         body.style.backgroundColor = "";
