@@ -11,6 +11,7 @@ const profileButton = document.querySelector('[data-js="profile-button"]');
 const darkModeTitle = document.querySelector('[data-js="dark-mode-title"]');
 
 darkMode.addEventListener("input", (event) => {
+    console.log(event.target.checked);
     if (event.target.checked) {
         body.style.backgroundColor = "#4a4e69";
         profile.style.color = "#eeb1d5";
@@ -26,10 +27,10 @@ darkMode.addEventListener("input", (event) => {
         profile.style.color = "";
         heading.style.backgroundColor = ""
         footer.style.backgroundColor = ""
-        homeButton.style.color = "#eeb1d5";
-        bookmarkButton.style.color = "#eeb1d5";
-        formButton.style.color = "#eeb1d5";
-        profileButton.style.color = "#eeb1d5";
+        homeButton.classList.remove("profile-dark-mode");
+        bookmarkButton.classList.remove("profile-dark-mode");
+        formButton.classList.remove("profile-dark-mode");
+        profileButton.classList.remove("profile-dark-mode");
         darkModeTitle.style.color = ""
     }
 });
