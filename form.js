@@ -29,8 +29,8 @@ form.addEventListener("submit", (event) => {
 
     body.append(questionCard);
     questionCard.append(questionElement);
-    questionCard.append(answerElement);
     questionCard.append(answerButton);
+    questionCard.append(answerElement);
     questionCard.append(bookmark);
     questionCard.append(tagsElement);
     tagsElement.append(tag1Element);
