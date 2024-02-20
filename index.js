@@ -26,11 +26,6 @@ answerButton.addEventListener("click", () => {
 })
 
 bookmark.addEventListener("click", () => {
-/*    if (bookmark.class = ("fa-regular")) {
-        bookmark.classList.add("fa-solid");
-    } else {
-    bookmark.classList.remove("fa-solid");
-    }*/
     bookmark.classList.toggle("fa-solid");
 })
 
